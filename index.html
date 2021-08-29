@@ -2,20 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
         <link href="styles/components/card.css" rel="stylesheet" type="text/css">
         <link href="styles/components/container.css" rel="stylesheet" type="text/css">
+        <link href="styles/components/navigationbar.css" rel="stylesheet" type="text/css">
         <link href="styles/modifiers/animations.css" rel="stylesheet" type="text/css">
+        <link href="styles/modifiers/utility-classes.css" rel="stylesheet" type="text/css">
         <title>Bester Visagie's Website</title>
     </head>
     <body>
-        <h1> Bester Visagie</h1>
-        <h2>Welcome to my website.</h2>
+        <nav class="navigation-bar">
+            <p class="p-l-1"> Bester Visagie</p>
+        </nav>
         <div class="container">
-            <a href="https://github.com/BesterV">
-                <div class="card animate-grow">
-                    <p>GitHub</p>
-                </div>
+            <a href="https://github.com/BesterV" class="card animate-grow" style="background-image: url(https://wallpapercave.com/wp/wp3082255.jpg);">
+                <p>GitHub</p>
+            </a>
+           <a href="https://bestersblog.blogspot.com/" class="card animate-grow" style="background-image: url(assets/macbook.jpg);">
+                <p>Blog</p>
+            </a>
+            <a href="https://www.instagram.com/good.better.bester/" class="card animate-grow" style="background-image: url(assets/lens.jpg);">
+                <p>Photos</p>
             </a>
         </div>
     </body>
