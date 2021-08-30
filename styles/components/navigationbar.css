@@ -1,14 +1,18 @@
 
 .navigation-bar {
-    position:fixed;
-    height: 3rem;
     width: 100%;
-    top: 0;
+    height: 100%;
+    justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #1b1b1d;;
 }
 
-.navigation-bar + * {
-    margin-top: 3rem;
+.header {
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        font-size: 5rem;
+    }
 }

@@ -3,12 +3,19 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
+    grid-template-rows: 20% auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-rows: 30% auto;
+    }
 }
 
 html {
     font-family: Helvetica;
     color: white;
-    background-color: hsl(240, 5%, 11%);
+    background-color: #000000;
     box-sizing: border-box;
 }
 
