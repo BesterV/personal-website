@@ -29,23 +29,51 @@ body {
     margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-    .posts-container {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .posts-container {
-        width: 50%;
-    }
-}
-
-
 .post {
     background-color: #1f1f1f;
     border-radius: 1rem;
     padding: 1rem;
+    height: 12rem;
+    overflow: hidden;
+    transition-property: top, left;
+    transition-duration: 1s;
+}
+
+.post-expanded {
+    height: 80vh;
+    width: 90vw;
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: height, top, left;
+    transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    .posts-container {
+        width: 80%;
+    }
+
+    .post-expanded {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pos-container {
+        width: 50%;
+    }
+
+    .post-expanded {
+        width: 50vw;
+    }
+
+}
+
+.post-expanded ~ .post { 
+    display:none; 
 }
 
 .title {
