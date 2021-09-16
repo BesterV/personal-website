@@ -14,7 +14,7 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     margin: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Blog Header */
