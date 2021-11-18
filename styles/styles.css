@@ -1,3 +1,19 @@
+:root {
+    --bg-color: #ffffff;
+    --primary-color: #000000;
+    --dark-bg-color: #000000;
+    --dark-primary-color: #ffffff;
+}
+
+/* HTML element styling */
+
+html {
+    font-family: 'Dosis', sans-serif;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     width: 100vw;
@@ -5,21 +21,6 @@ body {
     display: grid;
     justify-items: center;
     grid-template-rows: 20% auto;
-}
-
-@media (min-width: 768px) {
-    body {
-        grid-template-rows: auto;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-    }
-}
-
-html {
-    font-family: 'Dosis', sans-serif;
-    color: white;
-    background-color: #000000;
-    box-sizing: border-box;
 }
 
 a {
@@ -33,4 +34,67 @@ h1 {
 
 p {
     margin: 0;
+}
+
+/* Class level styling */
+
+body.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-primary-color);
+}
+
+.header-content {
+    display: flex;
+    width: 90%;
+}
+
+.header {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.btn-explore {
+    border-radius: 1rem;
+    height: 4.5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.btn-explore.dark-mode {
+    background-color: var(--dark-primary-color);
+    color: var(--dark-bg-color);
+}
+
+.footer-content {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-rows: 10% 80% 10%;
+        align-items: center;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 66% 33%;
+        grid-template-areas:
+            "main sidebar";
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-header {
+        font-size: 1.5rem;
+    }
+    .header {
+        font-size: 4.5rem;
+    }
 }

@@ -4,5 +4,4 @@
 
 .animate-grow:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 12px #000;
 }
