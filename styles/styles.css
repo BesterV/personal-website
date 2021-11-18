@@ -12,12 +12,13 @@ html {
     color: var(--primary-color);
     background-color: var(--bg-color);
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: grid;
     justify-items: center;
     grid-template-rows: 10% 80% 10%;
