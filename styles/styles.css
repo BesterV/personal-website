@@ -20,7 +20,8 @@ body {
     height: 100vh;
     display: grid;
     justify-items: center;
-    grid-template-rows: 20% auto;
+    grid-template-rows: 10% 80% 10%;
+    align-items: center;
 }
 
 a {
@@ -46,6 +47,15 @@ body.dark-mode {
 .header-content {
     display: flex;
     width: 90%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-areas:
+    "main"
+    "side-bar";
+    width: 90%;
+    height: 70%;
 }
 
 .header {
@@ -82,11 +92,9 @@ body.dark-mode {
     }
 
     .main-content {
-        display: grid;
-        grid-template-columns: 66% 33%;
         grid-template-areas:
-            "main sidebar";
-        width: 90%;
+            "main side-bar";
+        grid-template-columns: 66% 33%;
         justify-content: center;
         align-items: center;
     }
